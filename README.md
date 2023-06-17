@@ -1,4 +1,14 @@
 # sql-challenge
+
+# Data Modeling
+Tables:
+1. Departments: This table represents the departments in the organization. It has two columns: dept_no (department number) and dept_name (department name).
+2. Employees: This table represents the employees in the organization. It includes columns such as emp_no (employee number), emp_title_id (employee title identifier), birth_date, first_name, last_name, sex, and hire_date.
+3. Dept_emp: This table establishes a many-to-many relationship between employees and departments. It has two columns: emp_no and dept_no, serving as foreign keys referencing the respective columns in the Employees and Departments tables.
+4. Dept_managers: This table represents the department managers. It includes two columns: dept_no and emp_no, which are foreign keys referencing the Departments and Employees tables, respectively.
+5. Salaries: This table stores employee salaries. It has two columns: emp_no, which is a foreign key referencing the Employees table, and salary.
+6. Titles: This table stores employee titles. It includes two columns: title_id and title.
+   
 # Data Engineering
 
 The given data represents a series of SQL queries used to create and describe the structure of database tables. I will go through each query and explain what it does:
